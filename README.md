@@ -1,9 +1,11 @@
 # DeepLearningBasic
 Neural Network Implementation and Analysis Assignment
 
+# Kaggle Notebook: Model Optimization and Compression (11 Task ) - `neural-net-assignment.ipynb`
 
+This notebook (`neural-net-assignment.ipynb`) implements various model optimization and compression techniques on a Convolutional Neural Network (CNN) for image classification. It aims to reduce model size and improve inference speed with minimal impact on performance, comparing different strategies: **Pruning**, **Quantization**, and **Knowledge Distillation**.
 
-The code for Task 11 is organized into 11 distinct cells within the notebook, each performing a specific part of the implementation and analysis.
+The code for Task 11 is organized into multiple distinct cells within the notebook, each performing a specific part of the implementation and analysis.
 
 ## 1. Dataset
 
@@ -17,7 +19,9 @@ If your dataset is located elsewhere, you will need to update the `data_path` va
 
 To run this notebook on Kaggle, follow these steps:
 
-1.  **Create a New Notebook:** Go to Kaggle, click on "New Notebook".
+1.  **Create a New Notebook / Upload Existing:**
+    * If you're starting fresh, click on "New Notebook" on Kaggle.
+    * If you're uploading your existing `neural-net-assignment.ipynb` file, navigate to "File" > "Upload Notebook" in the Kaggle notebook interface, or upload it directly to your Kaggle workspace.
 2.  **Add Data:**
     * In the right-hand sidebar, click on "Add Data".
     * Search for "rvl-cdip small" or similar.
@@ -31,11 +35,11 @@ To run this notebook on Kaggle, follow these steps:
 
 ## 3. Running the Notebook
 
-The notebook is designed to be run sequentially, cell by cell. Each cell performs a distinct part of the overall task.
+The notebook (`neural-net-assignment.ipynb`) is designed to be run sequentially, cell by cell. Each cell performs a distinct part of the overall task.
 
 **Steps to run:**
 
-1.  **Open the Notebook:** Open your `.ipynb` file in the Kaggle environment.
+1.  **Open the Notebook:** Open `neural-net-assignment.ipynb` in the Kaggle environment.
 2.  **Run All Cells:** The easiest way to execute the entire notebook is to use the "Run All" option.
     * Go to `Run` menu -> `Run All Cells`.
     * Alternatively, you can click on each cell and press `Shift + Enter` to execute it sequentially.
@@ -74,3 +78,4 @@ After successfully running all cells, you should see:
         for the Baseline CNN, each Pruned CNN, Quantized CNN, and the Student CNN (KD).
 * **Plots:** A single bar plot showing the validation accuracy of the Baseline CNN and each of the compressed models.
 
+This output will allow you to analyze the trade-offs between model size, inference speed, and performance for each compression technique.
